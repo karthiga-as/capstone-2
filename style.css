@@ -1,0 +1,243 @@
+
+html{
+    height:100%;
+}
+
+.resumeContainer{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin:0;  
+}
+
+hr{
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+#profile{
+    background-color: #F7FFE5;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:0px 4px 50px;
+}
+
+.profileContainer{
+    display:grid;
+    grid-template-columns: .75fr;
+    grid-template-rows:.5fr;
+    padding:16px 50px 0px 50px;
+}
+
+.profileContainer img{
+     float:left;
+     padding-right: 20px;
+     padding-bottom: 16px;
+}
+
+.profileContainer div p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#WorkExperience{
+    background-color:#E1ECC8;
+    padding:30px 45px 40px;  
+
+}
+
+.workContainer{
+    display:flex;   
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+}
+
+.workContainer > div {
+    padding-top: 8px;
+}
+
+.workContainer >div > p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education{
+    background-color: #C4D7B2;
+    padding:16px 50px 50px;
+}
+
+.educationContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    padding: 40px;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.degree{
+    border-radius: 10%;
+    background-color: #F7FFE5;
+    padding:16px;
+}
+
+.degree ul {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.degree ul li {
+    padding-top:8px;
+}
+
+#skills{
+    background-color:#A0C49D;
+    padding:15px 40px 50px;
+}
+
+.skillContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: .25fr .25fr .25fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.skillContainer > div {
+     font-size: 1rem;
+     border:solid 8px #A0C49D;
+     border-radius: 10%;
+     background-color: #E1ECC8;
+     padding:8px 4px 8px 4px;
+}
+
+.skillContainer div h4 {
+    padding-left: 2px;
+}
+
+#rewards{
+    background-color: #B3C890;
+    padding:16px 50px 50px;
+}
+
+.rewardsContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    margin-top:40px;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewardClass{
+    border: 3px;
+    border-radius: 8%;
+    background-color: #F5F0BB;
+}
+
+.rewardClass ul {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rewardClass ul  li {
+    padding:8px 8px 8px 8px;
+    list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+#projects{
+    background-color: #F7FFE5;
+}
+
+.projectContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    padding:16px 50px 50px 50px;
+}
+
+.projectContainer img{
+     float:left;
+     padding-right: 20px;
+     padding-bottom: 16px;
+}
+
+.projectContainer div p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+#roles{
+    background-color:#E1ECC8;
+    padding: 16px 50px 30px 50px;
+}
+
+.rolesContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rolesContainer ul li{
+    padding:8px 8px 8px 8px;
+    list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+#footer{
+    background-color:#A0C49D;
+    padding:16px 50px 50px 50px;
+}
+
+#footer p{
+    margin:0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 450px) {
+    .educationContainer{
+      flex-direction:column;
+    }
+  }
+
+@media (max-width: 400px) {
+    .workContainer{
+        display:block;       
+    }
+  }
+
+@media (max-width:370px) {
+    .skillContainer {
+        display:block;
+    }
+
+    .rewardsContainer{
+        display:block;
+    }
+
+    .projectContainer{
+        display:block;
+    }
+
+    .projectContainer div img{
+        height:30px;
+    }
+}
+
+
+
